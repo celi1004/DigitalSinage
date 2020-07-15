@@ -39,18 +39,18 @@ option.add_experimental_option('prefs', prefs)
 driver = webdriver.Chrome('C:\\chromedriver.exe', chrome_options=option)
 
 #Login
-driver.get('http://165.194.45.94:8080/ssw/index.do?lang=ko')
+driver.get('link')
 delay = 3
 driver.implicitly_wait(delay)
 
-driver.find_element_by_name("account").send_keys('admin')
-driver.find_element_by_name("passwd").send_keys('password1234!')
+driver.find_element_by_name("account").send_keys('id')
+driver.find_element_by_name("passwd").send_keys('password')
 driver.find_element_by_xpath('//*[@id="signInSpan"]').click()
 
 time.sleep(1)
 
 #Download link
-driver.get('http://165.194.45.94:8080/SuperSignElite-w/schedule/exportScheduleXML.do?scheduleId=10007&scheduleFolderId=1')
+driver.get('download link')
 
 time.sleep(1)
 
